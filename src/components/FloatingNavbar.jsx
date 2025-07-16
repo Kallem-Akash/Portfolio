@@ -109,7 +109,7 @@ const FloatingNavbar = () => {
       onMouseMove={e => mouseX.set(e.clientX)}
       onMouseLeave={() => mouseX.set(Infinity)}
     >
-      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full shadow-2xl px-1 sm:px-2 py-2 flex items-center justify-center gap-x-3 sm:gap-x-6 min-w-[140px] sm:min-w-[200px] transition-all duration-300 sm:hover:min-w-[280px] sm:hover:px-6">
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full shadow-2xl px-1 sm:px-2 py-2 flex items-center justify-center gap-x-3 sm:gap-x-6 min-w-[200px] sm:min-w-[300px] transition-all duration-300 sm:hover:min-w-[360px] sm:hover:px-8">
         <div className="flex w-full justify-between items-center">
           {navItems.map((item, index) => renderDockIcon(item, index, false, true))}
           {renderDockIcon({ label: 'Toggle Theme' }, navItems.length, true, true)}

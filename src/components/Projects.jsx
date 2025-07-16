@@ -40,15 +40,15 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-600 overflow-hidden shadow transition-all duration-500 group hover:shadow-2xl hover:scale-105 hover:-translate-y-2 flex flex-col justify-between"
+            className="relative bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden shadow-lg dark:shadow-xl transition-all duration-500 group hover:shadow-2xl hover:scale-105 hover:-translate-y-2 flex flex-col justify-between"
           >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-violet-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-violet-500/10 to-transparent dark:from-violet-900/30 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10" />
             <div className="overflow-hidden">
               <img
                 src={project.image}
-                alt={project.title}
-                className="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                alt={project.title + ' screenshot'}
+                className="w-full h-44 sm:h-64 object-cover group-hover:scale-110 transition-transform duration-700 bg-gray-100 dark:bg-gray-700"
               />
             </div>
             <div className="p-3 sm:p-4 relative z-20 flex flex-col gap-1 flex-1 justify-between">
@@ -57,7 +57,7 @@ const Projects = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2 py-0.5 rounded text-xs hover:scale-110 hover:bg-violet-100 dark:hover:bg-violet-900 transition-all duration-300"
+                      className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 px-2 py-0.5 rounded text-xs hover:scale-110 hover:bg-violet-100 dark:hover:bg-violet-900 transition-all duration-300 border border-gray-200 dark:border-gray-600"
                     >
                       {tech}
                     </span>
@@ -72,11 +72,11 @@ const Projects = () => {
                 </p>
               </div>
               <div className="flex gap-2 mt-1">
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-900 dark:bg-gray-700 text-white px-3 py-1.5 rounded-lg hover:bg-violet-700 dark:hover:bg-violet-600 transition-all duration-300 hover:scale-110 hover:shadow-xl text-xs sm:text-sm">
+                <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-violet-700 dark:bg-violet-500 text-white px-3 py-1.5 rounded-lg hover:bg-violet-800 dark:hover:bg-violet-600 transition-all duration-300 hover:scale-110 hover:shadow-xl text-xs sm:text-sm font-semibold shadow-md dark:shadow-lg">
                   <ExternalLink size={16} />
                   Website
                 </a>
-                <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-100 dark:bg-gray-600 text-gray-900 dark:text-gray-100 px-3 py-1.5 rounded-lg hover:bg-violet-100 dark:hover:bg-violet-900 transition-all duration-300 hover:scale-110 hover:shadow-xl text-xs sm:text-sm">
+                <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 px-3 py-1.5 rounded-lg hover:bg-violet-100 dark:hover:bg-violet-900 transition-all duration-300 hover:scale-110 hover:shadow-xl text-xs sm:text-sm font-semibold border border-gray-200 dark:border-gray-600 shadow-md dark:shadow-lg">
                   <Github size={16} />
                   Code
                 </a>

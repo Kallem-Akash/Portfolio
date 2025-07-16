@@ -24,7 +24,16 @@ const Education = () => {
             </div>
             <div className="flex-1">
               <div className="flex items-center justify-between mb-2">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-200">{edu.institution}</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-200">
+                  <a
+                    href="https://anurag.edu.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="outline-none"
+                  >
+                    {edu.institution}
+                  </a>
+                </h3>
                 <span className="text-sm text-gray-500 dark:text-gray-400">{edu.period}</span>
               </div>
               <p className="text-gray-600 dark:text-gray-300">{edu.degree}</p>

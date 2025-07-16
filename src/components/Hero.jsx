@@ -34,32 +34,34 @@ const Hero = () => {
           <p className="text-base sm:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8">
             Software Developer. I love building things and helping people.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:gap-4 w-full text-gray-500 dark:text-gray-500">
-            <a
-              href="mailto:akashgoud018@gmail.com"
-              className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200"
-              aria-label="Send mail"
-            >
-              <Mail size={16} />
-              <span className="inline">Email</span>
-            </a>
-            <a
-              href="/resume.pdf"
-              className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200"
-              aria-label="View Resume"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FileText size={16} />
-              <span className="inline">View Resume</span>
-            </a>
-            <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">
-              <MapPin size={16} />
-              <span>Hyderabad, India</span>
-            </div>
-            <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">
-              <Clock size={16} />
-              <span className="font-mono">{currentTime}</span>
+          <div className="flex flex-col sm:flex-row items-center lg:items-start w-full gap-2 sm:gap-4 text-gray-500 dark:text-gray-500">
+            <div className="flex flex-row items-center gap-4 flex-1 justify-center sm:justify-start flex-wrap sm:flex-nowrap">
+              <a
+                href="mailto:akashgoud018@gmail.com"
+                className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200"
+                aria-label="Send mail"
+              >
+                <Mail size={16} />
+                <span className="inline">Email</span>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1qrkbRRIKmReabPft9jnQGHdOcg0F7uTv/view?usp=drive_link"
+                className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200"
+                aria-label="View Resume"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FileText size={16} />
+                <span className="inline">View Resume</span>
+              </a>
+              <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">
+                <MapPin size={16} />
+                <span>Hyderabad, India</span>
+              </div>
+              <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">
+                <Clock size={16} />
+                <span className="font-mono">{currentTime}</span>
+              </div>
             </div>
           </div>
         </div>
