@@ -60,7 +60,7 @@ const FloatingNavbar = () => {
           </a>
         )}
         {/* Tooltip */}
-        {hoveredItem === item.label && (
+        {hoveredItem === item.label && !isTheme && (
           <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-900 dark:bg-gray-700 text-white text-xs rounded shadow-lg whitespace-nowrap z-50 animate-fade-in">
             {item.label}
             <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900 dark:border-t-gray-700"></div>

@@ -34,7 +34,7 @@ const Hero = () => {
           <p className="text-base sm:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8">
             Software Developer. I love building things and helping people.
           </p>
-          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-4 text-gray-500 dark:text-gray-500 w-full">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-2 sm:space-y-0 sm:gap-4 w-full text-gray-500 dark:text-gray-500">
             <a
               href="mailto:akashgoud018@gmail.com"
               className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200"
@@ -64,11 +64,11 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex-shrink-0 order-first lg:order-last mb-6 lg:mb-0">
-          <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full flex items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl bg-gradient-to-br from-violet-200 via-violet-400 to-violet-600 dark:from-violet-900 dark:via-violet-700 dark:to-violet-500">
+          <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full flex items-center justify-center overflow-hidden hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl bg-gradient-to-br from-violet-200 via-violet-400 to-violet-600 dark:from-violet-900 dark:via-violet-700 dark:to-violet-500 ring-4 ring-violet-300 dark:ring-violet-700">
             <img 
               src={profile}
-              alt="Profile"
-              className="w-full h-full object-cover"
+              alt="Akash's profile photo"
+              className="w-full h-full object-cover transition-transform duration-300 hover:rotate-1 hover:brightness-110"
             />
           </div>
         </div>

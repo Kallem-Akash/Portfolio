@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'CLIPZIP - Video Downloader Platform',
-      description: 'Full-stack video downloader with secure login, responsive UI, multi-platform support, and real-time download status tracking. Enables users to download videos from platforms like YouTube and Instagram through a unified interface.Built with secure access across both desktop and mobile devices.',
+      description: 'Full-stack video downloader with secure login, responsive UI, multi-platform support, and real-time download status tracking. Enables users to download videos from platforms like YouTube and Instagram.',
       image: project1,
       technologies: ['Java', 'Spring Boot', 'React', 'TailwindCSS', 'Rapid API'],
       link: 'https://clipzip.vercel.app/',
@@ -15,10 +15,10 @@ const Projects = () => {
     },
     {
       title: 'Student Management Web Application',
-      description: 'Student Management System for handling, updating, and organizing student records efficiently. The system supports CRUD operations for student data, including personal details. Includes features like role-based access, and a user-friendly interface for managing large datasets.',
+      description: 'Student Management System for handling, updating, and organizing student records efficiently. The system supports CRUD operations for student data, including personal details.',
       image: project2,
       technologies: ['Java', 'MySQL', 'HTML', 'CSS',],
-      link: '#',
+      link: '/',
       github: 'https://github.com/Kallem-Akash/Student-Management-Web-Application'
     }
   ];
