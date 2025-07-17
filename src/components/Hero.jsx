@@ -32,21 +32,21 @@ const Hero = () => {
             <span className="inline-block animate-wave">👋</span>
           </h1>
           <p className="text-base sm:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8">
-            Software Developer. I love building things and helping people.
+          Software Developer. I love building things and exploring new technologies.
           </p>
-          <div className="flex flex-col sm:flex-row items-center lg:items-start w-full gap-2 sm:gap-4 text-gray-500 dark:text-gray-500">
+          <div className="flex flex-col sm:flex-row items-center lg:items-start w-full gap-2 sm:gap-4">
             <div className="flex flex-row items-center gap-4 flex-1 justify-center sm:justify-start flex-wrap sm:flex-nowrap">
               <a
                 href="mailto:akashgoud018@gmail.com"
-                className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200"
+                className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200 text-gray-600 dark:text-gray-400"
                 aria-label="Send mail"
               >
                 <Mail size={16} />
                 <span className="inline">Email</span>
               </a>
               <a
-                href="https://drive.google.com/file/d/1qrkbRRIKmReabPft9jnQGHdOcg0F7uTv/view?usp=drive_link"
-                className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200"
+                href="/resume.pdf"
+                className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200 text-gray-600 dark:text-gray-400"
                 aria-label="View Resume"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -54,11 +54,11 @@ const Hero = () => {
                 <FileText size={16} />
                 <span className="inline">View Resume</span>
               </a>
-              <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">
+              <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200 text-gray-600 dark:text-gray-400">
                 <MapPin size={16} />
                 <span>Hyderabad, India</span>
               </div>
-              <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200">
+              <div className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200 text-gray-600 dark:text-gray-400">
                 <Clock size={16} />
                 <span className="font-mono">{currentTime}</span>
               </div>
