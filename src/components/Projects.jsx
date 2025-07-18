@@ -2,6 +2,7 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import project1 from '../images/project1.png';
 import project2 from '../images/project2.jpg';
+import project3 from '../images/project3.png';
 
 const Projects = () => {
   const projects = [
@@ -13,6 +14,15 @@ const Projects = () => {
       link: 'https://clipzip.vercel.app/',
       github: 'https://github.com/Kallem-Akash/ClipZip-Frontend'
     },
+    {
+      title: 'CodeConvert AI',
+      description: 'CodeConvert is an AI-powered code converter that instantly transforms code between programming languages like Python, Java, JavaScript, and more. Built for developers to save time and effort when switching stacks or learning new languages.',
+      image: project3,
+      technologies: ['Java', 'Spring Boot', 'OpenAI API', 'React.js', 'Tailwind CSS'],
+      link: 'https://codexconvert.vercel.app/', 
+      github: 'https://github.com/Kallem-Akash/CodeConvert-Backend' 
+    }
+    ,
     {
       title: 'Student Management Web Application',
       description: 'Student Management System for handling, updating, and organizing student records efficiently. The system supports CRUD operations for student data, including personal details.',
