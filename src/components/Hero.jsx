@@ -45,7 +45,7 @@ const Hero = () => {
                 <span className="inline">Email</span>
               </a>
               <a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/17SKGrSw1wrtwta1s-1t9DuikTqtwdSSO/view?usp=sharing"
                 className="flex items-center gap-1.5 sm:gap-2 hover:text-violet-600 dark:hover:text-violet-400 transition-colors duration-200 text-gray-600 dark:text-gray-400"
                 aria-label="View Resume"
                 target="_blank"
